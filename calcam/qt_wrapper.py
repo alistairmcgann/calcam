@@ -40,6 +40,11 @@ except:
 	from PyQt4 import uic
 	qt_ver = 4
 
+	try:
+		from PyQt4 import QString
+	except:
+		QString = str
+
 
 # Here's a function which creates a new instance of QTreeWidgetItem,
 # which will work in either PyQt4 or 5. For PyQt4 we have to make string list
